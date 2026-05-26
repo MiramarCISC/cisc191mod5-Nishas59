@@ -1,9 +1,5 @@
 package edu.sdccd.cisc191;
 
-/**
- * A simple tournament bracket node.
- * Each node can point to earlier matches on the left and right.
- */
 public class BracketNode {
     private final String matchName;
     private final BracketNode left;
@@ -19,15 +15,7 @@ public class BracketNode {
         this.right = right;
     }
 
-    public String getMatchName() {
-        return matchName;
-    }
-
-    public BracketNode getLeft() {
-        return left;
-    }
-
-    public BracketNode getRight() {
-        return right;
-    }
+    public String getMatchName() { return matchName; }
+    public BracketNode getLeft()  { return left; }
+    public BracketNode getRight() { return right; }
 }
